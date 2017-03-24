@@ -8,7 +8,21 @@ position: fixed
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #bbae51;}
+    background-color: #bbae51;}.dropdown {
+    position: fixed;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 6px 8px;
+    z-index: -2;
+	height:320px;width:320px;
+}
+
 li.n{
 float: left;
 }.cen {position: absolute; left: 50%; transform: translate(-50%,0);}
@@ -25,7 +39,15 @@ body { color: #fff; background: linear-gradient(to right, #633517, #00477e);} *{
 </head>
 <body><iframe src='background.html' style='z-index:-1;height:100%;width:100%;position: fixed;'></iframe>
 <div style=' background-color: #bbae51; padding: 0; margin: 0;'><h1 style='display: inline;text-align: center; position: relative'>( ͡° ͜ʖ ͡°)Animu( ͡° ͜ʖ ͡°)</h1>
-<ul class='n'><li class='n'><a href='index.html'>Home</a></li><li class='n'><a href='main.html'>Popular Animu's</a></li><li class='n'><a href='side.html'>Popular Mangu's</a></li><li class='n'><a href='four.html' class='active'>Not an Animu</a></li></ul></div><img class='cen' style='height: 720px' src='Assets/tf.gif'><p class='cen' style='color: black'>TOUHOU IS NOT AN ANIME</p></img><div style='position: absolute; top: 100%; transform: translate(0,-100%);'><a style='color: white;' href='https://f1ame.github.io/ricka/index.html'>You can Contact us at<br>1-(800)-rick-astleys-never-gonna-give-you-up<br>or by clicking <span style='color: blue;'>here</span></a></div>
+<ul class='n'><li class='n'><a href='index.html'>Home</a></li><li class='n'><a href='main.html'>Popular Animu's</a></li><li class='n'><a href='side.html'>Popular Mangu's</a></li><li class='n'><a href='four.html' class='active'>Not an Animu</a></li></ul></div><img class='cen' style='height: 720px' src='Assets/tf.gif'><p class='cen' style='color: black'>TOUHOU IS NOT AN ANIME</p><div style='z-index:-3'><div onmouseover='hov()' onmouseout='nohov()' class='dropdown'style='z-index:0; top: 100%; transform: translate(0,-100%);'><a style='color: white;' href='https://f1ame.github.io/ricka/index.html'>You can Contact us at<br>1-(800)-rick-astleys-never-gonna-give-you-up<br>or by clicking <span style='color: blue;'>here</span></a></div></div></div><bdi class='loc'></bdi>
+<div id='con' style='z-index:-2'><iframe id='rick' class='dropdown-content'src=''></iframe></div><script>
+	function hov() {
+	document.getElementById("rick").src = 'https://f1ame.github.io/ricka/index.html'
+	}
+	function nohov() {
+	   document.getElementById("rick").src = ''
+	   }
+</script>
 <script>
 </script>
 </body>
