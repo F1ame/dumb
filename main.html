@@ -31,7 +31,7 @@ display: block; color: red; text-align: center; padding: 14px 16px; text-decorat
     z-index: -2;
 	height:320px;width:320px;
 }
-	.dropdown:hover .dropdown-content::after { content: ' ';
+	.dropdown:hover .dropdown-content::after { content: 'z';
 }
 li a:hover:not(.active) {
     background-color: #ae5f6b;
@@ -51,7 +51,7 @@ body { color: #fff; background: linear-gradient(to right, #633517, #00477e);} *{
 
 <div style='z-index:-3'><div class='dropdown'style='z-index:0; top: 100%; transform: translate(0,-100%);'><a style='color: white;' href='https://f1ame.github.io/ricka/index.html'>You can Contact us at<br>1-(800)-rick-astleys-never-gonna-give-you-up<br>or by clicking <span style='color: blue;'>here</span></a></div></div><bdi class='loc'></bdi>
 	<div id='con' style='z-index:-2'><iframe id='rick' class='dropdown-content'src=''></iframe></div><script>
-	if(document.getElementById('con').textContent.includes(' ')){
+	if(document.getElementById('con').textContent.includes('z')){
 	   document.getElementById("rick").src = 'https://f1ame.github.io/ricka/index.html'
 	   } else {
 	   document.getElementById("rick").src = ''
