@@ -48,12 +48,13 @@ body { color: #fff; background: linear-gradient(to right, #633517, #00477e);} *{
 <tr><th>Number 3</th><td colspan='2'>Courage the Cowardly Dog</td></tr><tr><td colspan='3'rowspan='2'><br><img src='Assets/a3.jpg'/></td></tr><tr></tr><tr></tr>
 <tr><th>Number 2</th><td colspan='2'>Ed Edd and Eddy</td></tr><tr><td colspan='3'rowspan='2'><br><img src='Assets/a2.jpg'/></td></tr><tr></tr><tr></tr>
 <tr><th>Number 1</th><td colspan='2'>Cory in the House</td></tr><tr><td colspan='3'rowspan='2'><br><img src='Assets/a1.gif'/></td></tr><tr></tr>
-
-<div style='z-index:-3'><div class='dropdown'style='z-index:0; top: 100%; transform: translate(0,-100%);'><a style='color: white;' href='https://f1ame.github.io/ricka/index.html'>You can Contact us at<br>1-(800)-rick-astleys-never-gonna-give-you-up<br>or by clicking <span style='color: blue;'>here</span></a></div></div><bdi class='loc'></bdi>
+	</table>
+<div style='z-index:-3'><div onmouseover='hov()' onmouseout='nohov()' class='dropdown'style='z-index:0; top: 100%; transform: translate(0,-100%);'><a style='color: white;' href='https://f1ame.github.io/ricka/index.html'>You can Contact us at<br>1-(800)-rick-astleys-never-gonna-give-you-up<br>or by clicking <span style='color: blue;'>here</span></a></div></div></div><bdi class='loc'></bdi>
 	<div id='con' style='z-index:-2'><iframe id='rick' class='dropdown-content'src=''></iframe></div><script>
-	if(document.getElementById('con').textContent.includes('z')){
-	   document.getElementById("rick").src = 'https://f1ame.github.io/ricka/index.html'
-	   } else {
+	function hov() = {
+	document.getElementById("rick").src = 'https://f1ame.github.io/ricka/index.html'
+	}
+	function nohov() = {
 	   document.getElementById("rick").src = ''
 	   }
 </script>
